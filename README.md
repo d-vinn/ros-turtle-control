@@ -20,3 +20,11 @@ sudo service mysql start
 ```bash
 python3 gui/app.py
 ```
+
+# 3. SQL 확인 방법
+```bash
+mysql -u root -p
+[pw 입력]
+use rosdb;
+select * from turtlepos;
+```
