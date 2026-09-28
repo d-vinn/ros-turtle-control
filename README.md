@@ -1,30 +1,73 @@
-# 0. SQL 구조
-<img width="283" height="181" alt="스크린샷 2026-09-28 113455" src="https://github.com/user-attachments/assets/fb78d85b-8477-4c2d-a1a3-9b3acacf7200" />
-<img width="501" height="233" alt="image" src="https://github.com/user-attachments/assets/cc9b3d4d-3d3f-4722-b563-68550bafd4b6" />
+# ROS2 Turtle Control with PyQt & MySQL
 
+PyQt5 GUI를 통해 ROS2 Turtlesim 제어 및 거북이의 위치와 동작 정보를 MySQL(WSL) 데이터베이스에 저장하는 프로젝트
 
+---
 
-# 1. PyQt 레이아웃
-<img width="372" height="133" alt="image" src="https://github.com/user-attachments/assets/8cd9162b-3057-4626-85df-1031093061ec" />
+## 요구사항 
+* Ubuntu 22.04 (WSL2 환경)
+* ROS2 Humble
+* Python 3.10+
+* MySQL Server (WSL 환경)
 
-# 2. 실행 방법
+---
+
+## 실행 방법 
+
+### 1. 저장소 클론 및 이동
 ```bash
-git clone https://github.com/d-vinn/ros-turtle-control.git
+git clone [https://github.com/d-vinn/ros-turtle-control.git](https://github.com/d-vinn/ros-turtle-control.git)
+cd ros-turtle-control
 ```
-```bash
-ros2 run turtlesim turtlesim_node
-```
+### 2. MySQL DB 및 TABLE 세팅 (WSL 환경)
+MySQL 서비스를 실행 후 make_ros_sql.sql 파일을 이용해 DB와 테이블 생성
+
 ```bash
 sudo service mysql start
 ```
 ```bash
-python3 gui/app.py
+sudo mysql -u root -p < make_ros_sql.sql
 ```
 
-# 3. SQL 확인 방법
+### 3. 환경 변수(.env) 설정
+프로젝트 루트 폴더에 .env.example 파일을 복사해 .env 파일을 생성하고, 본인의 MySQL 비밀번호 입력
+
 ```bash
-mysql -u root -p
-[pw 입력]
-use rosdb;
-select * from turtlepos;
+cp .env.example .env
+vi .env #pw 입력
+```
+
+### 4. 파이썬 가상환경 생성 및 패키지 설치
+```bash
+python3 -m venv rospyvenv
+source rospyvenv/bin/activate
+pip install -r requirements.txt
+```
+
+### 5. ROS2 패키지 빌드
+
+```bash
+cd ~/ros2_study   # 본인의 워크스페이스 경로에 맞게 조정
+colcon build --packages-select ros_pkg
+source install/setup.bash
+```
+
+### 6. 프로그램 실행 (총 3개의 터미널 필요)
+터미널 1 (Turtlesim 시뮬레이터 실행)
+```bash
+ros2 run turtlesim turtlesim_node
+```
+
+터미널 2 (C++ ROS2 브릿지 노드 실행)
+```bash
+cd ~/ros2_study
+source install/setup.bash
+ros2 run ros_pkg turtle_bridge_node
+```
+
+터미널 3 (PyQt GUI 실행)
+```bash
+cd ros-turtle-control
+source rospyvenv/bin/activate
+python3 gui/app.py
 ```
