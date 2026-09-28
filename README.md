@@ -3,3 +3,8 @@
 
 # 1. PyQt 레이아웃
 <img width="372" height="133" alt="image" src="https://github.com/user-attachments/assets/8cd9162b-3057-4626-85df-1031093061ec" />
+
+# 2. 실행 방법
+ros2 run turtlesim turtlesim_node
+sudo service mysql start
+python3 gui/app.py
