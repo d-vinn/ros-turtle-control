@@ -60,7 +60,7 @@ ros2 run turtlesim turtlesim_node
 ```bash
 cd ~/ros2_study
 source install/setup.bash
-ros2 run ros_pkg turtle_bridge_node
+ros2 run ros_pkg turtle_node
 ```
 
 터미널 3 (PyQt GUI 실행)
