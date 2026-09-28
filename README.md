@@ -5,9 +5,15 @@
 <img width="372" height="133" alt="image" src="https://github.com/user-attachments/assets/8cd9162b-3057-4626-85df-1031093061ec" />
 
 # 2. 실행 방법
-```console
+```bash
 $ git clone https://github.com/d-vinn/ros-turtle-control.git
+```
+```bash
 $ ros2 run turtlesim turtlesim_node
+```
+```bash
 $ sudo service mysql start
+```
+```bash
 $ python3 gui/app.py
 ```
