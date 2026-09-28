@@ -6,5 +6,9 @@
 
 # 2. 실행 방법
 ros2 run turtlesim turtlesim_node
+
+
 sudo service mysql start
+
+
 python3 gui/app.py
