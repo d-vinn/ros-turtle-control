@@ -6,14 +6,14 @@
 
 # 2. 실행 방법
 ```bash
-$ git clone https://github.com/d-vinn/ros-turtle-control.git
+git clone https://github.com/d-vinn/ros-turtle-control.git
 ```
 ```bash
-$ ros2 run turtlesim turtlesim_node
+ros2 run turtlesim turtlesim_node
 ```
 ```bash
-$ sudo service mysql start
+sudo service mysql start
 ```
 ```bash
-$ python3 gui/app.py
+python3 gui/app.py
 ```
