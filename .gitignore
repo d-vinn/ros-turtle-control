@@ -1,2 +1,6 @@
 .env
 rospyvenv
+build/
+install/
+log/
+
