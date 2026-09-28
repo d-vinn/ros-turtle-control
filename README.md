@@ -71,3 +71,9 @@ cd ros-turtle-control
 source rospyvenv/bin/activate
 python3 gui/app.py
 ```
+
+# 실행 화면 및 SQL 구성
+<img width="372" height="133" alt="스크린샷 2026-09-28 121506" src="https://github.com/user-attachments/assets/de5284f1-e2ce-4e13-9352-bd4b321e8ebe" />
+<img width="501" height="233" alt="스크린샷 2026-09-28 152523" src="https://github.com/user-attachments/assets/d8e87ad2-02d6-4a5a-8cf1-2f97bd153e9f" />
+
+
