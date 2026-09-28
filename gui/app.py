@@ -1,10 +1,14 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
+from db_update import DB, DB_CONFIG
+from locate import ChangeTurtleLocate
 
 class MyWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.loc = ChangeTurtleLocate()
+        self.db = DB(**DB_CONFIG)
         self.initUI()
 
     def initUI(self):
@@ -17,12 +21,12 @@ class MyWindow(QMainWindow):
         down = QPushButton(text = "↓")
         right = QPushButton(text = "→")
 
-        reset_btn.clicked.connect(self.resetturtle)
-        db_btn.clicked.connect(self.dbwrite)
-        left.clicked.connect(self.goleft)
-        up.clicked.connect(self.goup)
-        down.clicked.connect(self.godown)
-        right.clicked.connect(self.goright)
+        reset_btn.clicked.connect(self.loc.reset)
+        db_btn.clicked.connect(lambda: self.db.insert_data('turtle1', self.loc.x, self.loc.y, self.loc.theta))
+        left.clicked.connect(self.loc.goleft)
+        up.clicked.connect(self.loc.goup)
+        down.clicked.connect(self.loc.godown)
+        right.clicked.connect(self.loc.goright)
 
         arrow = QGridLayout()
         arrow.addWidget(up, 0, 1)
@@ -44,26 +48,9 @@ class MyWindow(QMainWindow):
         widget.setLayout(allgui)
         self.setCentralWidget(widget)
 
-    def resetturtle(self):
-        print("reset")
-
-    def dbwrite(self):
-        print("db")
-
-    def goup(self):
-        print("up")
-
-    def godown(self):
-        print("down")
-
-    def goright(self):
-        print("right")
-
-    def goleft(self):
-        print("left")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     win = MyWindow()
     win.show()
-    app.exec_()
+    sys.exit(app.exec_())
