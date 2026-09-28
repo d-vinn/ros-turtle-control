@@ -24,8 +24,6 @@ MySQL 서비스를 실행 후 make_ros_sql.sql 파일을 이용해 DB와 테이�
 
 ```bash
 sudo service mysql start
-```
-```bash
 sudo mysql -u root -p < make_ros_sql.sql
 ```
 
