@@ -6,7 +6,7 @@
 
 # 2. 실행 방법
 ```shell
-\$ git clone "레포지토리 링크"
+\$ git clone https://github.com/d-vinn/ros-turtle-control.git
 \$ ros2 run turtlesim turtlesim_node
 \$ sudo service mysql start
 \$ python3 gui/app.py
