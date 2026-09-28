@@ -16,7 +16,7 @@ PyQt5 GUI를 통해 ROS2 Turtlesim 제어 및 거북이의 위치와 동작 정�
 
 ### 1. 저장소 클론 및 이동
 ```bash
-git clone [https://github.com/d-vinn/ros-turtle-control.git](https://github.com/d-vinn/ros-turtle-control.git)
+git clone https://github.com/d-vinn/ros-turtle-control.git
 cd ros-turtle-control
 ```
 ### 2. MySQL DB 및 TABLE 세팅 (WSL 환경)
