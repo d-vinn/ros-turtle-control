@@ -1,3 +1,4 @@
+import os
 import sys
 import threading
 import rclpy
@@ -29,7 +30,10 @@ class MyWindow(QMainWindow):
 
     def initUI(self):
         self.setWindowTitle("ROS2 turtle Control")
-        
+
+        curr_dir = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(curr_dir, 'turtle.png')
+        self.setWindowIcon(QIcon(icon_path))
         reset_btn = QPushButton(text = "turtle RESET")
         db_btn = QPushButton(text = "DB write")
         left = QPushButton(text = "←")
