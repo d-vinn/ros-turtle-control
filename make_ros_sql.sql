@@ -2,9 +2,9 @@ create schema rosdb;
 use rosdb;
 create table turtlepos(
 	id varchar(20),
-    x int,
-    y int,
-    theta int,
+    x float,
+    y float,
+    theta float,
     time datetime default current_timestamp
 );
     
