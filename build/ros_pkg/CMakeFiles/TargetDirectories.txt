@@ -1,0 +1,10 @@
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/uninstall.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/ros_pkg_uninstall.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/turtle_node.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/test.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/edit_cache.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/rebuild_cache.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/list_install_components.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/install.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/install/local.dir
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg/CMakeFiles/install/strip.dir

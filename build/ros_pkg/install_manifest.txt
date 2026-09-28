@@ -1,0 +1,16 @@
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/lib/ros_pkg/turtle_node
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/package_run_dependencies/ros_pkg
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/parent_prefix_path/ros_pkg
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/ament_prefix_path.sh
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/ament_prefix_path.dsv
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/path.sh
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/path.dsv
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.bash
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.sh
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.zsh
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.dsv
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/package.dsv
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/packages/ros_pkg
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/cmake/ros_pkgConfig.cmake
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/cmake/ros_pkgConfig-version.cmake
+/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/package.xml

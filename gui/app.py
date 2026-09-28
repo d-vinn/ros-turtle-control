@@ -70,7 +70,13 @@ class MyWindow(QMainWindow):
 
 
 if __name__ == '__main__':
+    rclpy.init(args=None)
+    ros_node = GuiRosPublisher()
+
+    ros_thread = threading.Thread(target=rclpy.spin, args=(ros_node,), daemon=True)
+    ros_thread.start()
+
     app = QApplication(sys.argv)
-    win = MyWindow()
+    win = MyWindow(ros_node)
     win.show()
     sys.exit(app.exec_())

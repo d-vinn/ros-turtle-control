@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.000128] (my-test-package) JobQueued: {'identifier': 'my-test-package', 'dependencies': OrderedDict()}
+[0.000151] (ros_pkg) JobQueued: {'identifier': 'ros_pkg', 'dependencies': OrderedDict()}
+[0.000165] (my-test-package) JobStarted: {'identifier': 'my-test-package'}
+[0.010414] (ros_pkg) JobStarted: {'identifier': 'ros_pkg'}
+[0.099340] (-) TimerEvent: {}
+[0.199588] (-) TimerEvent: {}
+[0.236498] (ros_pkg) JobProgress: {'identifier': 'ros_pkg', 'progress': 'cmake'}
+[0.237772] (ros_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/ros_pkg', '-DCMAKE_INSTALL_PREFIX=/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg'], 'cwd': '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'd-vinn'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d-vinn'), ('OLDPWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/ros_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(rospyvenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/d-vinn/ros2_study/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'd-vinn'), ('NAME', 'DESKTOP-DO0M5CF'), ('WSL_INTEROP', '/run/WSL/4143_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/opt/ros/humble/bin:/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/home/d-vinn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.14.0_x64__8wekyb3d8bbwe:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/302-09/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/302-09/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/302-09/AppData/Roaming/npm:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(rospyvenv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/my_first_package:/home/d-vinn/ros2_study/install/first_pkg_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:58882f73-14fe-490e-bfbf-ad31df727ead'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv'), ('PWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/d-vinn/ros2_study/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '6800'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/first_pkg_cpp:/home/d-vinn/ros2_study/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.299705] (-) TimerEvent: {}
+[0.327895] (ros_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399833] (-) TimerEvent: {}
+[0.455625] (ros_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.499926] (-) TimerEvent: {}
+[0.600513] (ros_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.600691] (-) TimerEvent: {}
+[0.603258] (my-test-package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../../../../../build/my-test-package', 'build', '--build-base', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/my-test-package/build', 'install', '--record', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/my-test-package/install.log', '--single-version-externally-managed'], 'cwd': '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'd-vinn'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d-vinn'), ('OLDPWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/ros_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(rospyvenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/d-vinn/ros2_study/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'd-vinn'), ('NAME', 'DESKTOP-DO0M5CF'), ('WSL_INTEROP', '/run/WSL/4143_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/opt/ros/humble/bin:/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/home/d-vinn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.14.0_x64__8wekyb3d8bbwe:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/302-09/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/302-09/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/302-09/AppData/Roaming/npm:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(rospyvenv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/my_first_package:/home/d-vinn/ros2_study/install/first_pkg_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:58882f73-14fe-490e-bfbf-ad31df727ead'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv'), ('PWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/my-test-package'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/my-test-package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/my-test-package/lib/python3.10/site-packages:/home/d-vinn/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/d-vinn/ros2_study/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '6800'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/first_pkg_cpp'), ('WSLENV', '')]), 'shell': False}
+[0.604588] (ros_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.615968] (ros_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.632318] (ros_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.650985] (ros_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700776] (-) TimerEvent: {}
+[0.702308] (ros_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.705892] (ros_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800879] (-) TimerEvent: {}
+[0.824616] (my-test-package) StdoutLine: {'line': b'running egg_info\n'}
+[0.825118] (my-test-package) StdoutLine: {'line': b'writing ../../../../../../../../build/my-test-package/my_test_package.egg-info/PKG-INFO\n'}
+[0.825673] (my-test-package) StdoutLine: {'line': b'writing dependency_links to ../../../../../../../../build/my-test-package/my_test_package.egg-info/dependency_links.txt\n'}
+[0.825842] (my-test-package) StdoutLine: {'line': b'writing top-level names to ../../../../../../../../build/my-test-package/my_test_package.egg-info/top_level.txt\n'}
+[0.826656] (my-test-package) StdoutLine: {'line': b"reading manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'\n"}
+[0.827954] (my-test-package) StdoutLine: {'line': b"writing manifest file '../../../../../../../../build/my-test-package/my_test_package.egg-info/SOURCES.txt'\n"}
+[0.828045] (my-test-package) StdoutLine: {'line': b'running build\n'}
+[0.828164] (my-test-package) StdoutLine: {'line': b'running install\n'}
+[0.828301] (my-test-package) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.830608] (my-test-package) StdoutLine: {'line': b"removing '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/my-test-package/lib/python3.10/site-packages/my_test_package-1.0-py3.10.egg-info' (and everything under it)\n"}
+[0.830840] (my-test-package) StdoutLine: {'line': b'Copying ../../../../../../../../build/my-test-package/my_test_package.egg-info to /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/my-test-package/lib/python3.10/site-packages/my_test_package-1.0-py3.10.egg-info\n'}
+[0.831976] (my-test-package) StdoutLine: {'line': b'running install_scripts\n'}
+[0.848600] (my-test-package) StdoutLine: {'line': b"writing list of installed files to '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/my-test-package/install.log'\n"}
+[0.867925] (my-test-package) CommandEnded: {'returncode': 0}
+[0.883827] (my-test-package) JobEnded: {'identifier': 'my-test-package', 'rc': 0}
+[0.900974] (-) TimerEvent: {}
+[1.001276] (-) TimerEvent: {}
+[1.101557] (-) TimerEvent: {}
+[1.201825] (-) TimerEvent: {}
+[1.302049] (-) TimerEvent: {}
+[1.402347] (-) TimerEvent: {}
+[1.502569] (-) TimerEvent: {}
+[1.602786] (-) TimerEvent: {}
+[1.703054] (-) TimerEvent: {}
+[1.803389] (-) TimerEvent: {}
+[1.903658] (-) TimerEvent: {}
+[2.003936] (-) TimerEvent: {}
+[2.104170] (-) TimerEvent: {}
+[2.204431] (-) TimerEvent: {}
+[2.304689] (-) TimerEvent: {}
+[2.404947] (-) TimerEvent: {}
+[2.505242] (-) TimerEvent: {}
+[2.605514] (-) TimerEvent: {}
+[2.705864] (-) TimerEvent: {}
+[2.806106] (-) TimerEvent: {}
+[2.906352] (-) TimerEvent: {}
+[3.006570] (-) TimerEvent: {}
+[3.106786] (-) TimerEvent: {}
+[3.207048] (-) TimerEvent: {}
+[3.307325] (-) TimerEvent: {}
+[3.407661] (-) TimerEvent: {}
+[3.507919] (-) TimerEvent: {}
+[3.608191] (-) TimerEvent: {}
+[3.708479] (-) TimerEvent: {}
+[3.808745] (-) TimerEvent: {}
+[3.909007] (-) TimerEvent: {}
+[3.941999] (ros_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.009110] (-) TimerEvent: {}
+[4.044127] (ros_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.062109] (ros_pkg) StdoutLine: {'line': b'-- Found std_srvs: 4.9.2 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[4.078255] (ros_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.109172] (-) TimerEvent: {}
+[4.176691] (ros_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.176821] (ros_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.176872] (ros_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.178259] (ros_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.179780] (ros_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.179874] (ros_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.180934] (ros_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.182929] (ros_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.193092] (ros_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[4.197063] (ros_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg\n'}
+[4.202186] (ros_pkg) CommandEnded: {'returncode': 0}
+[4.204354] (ros_pkg) JobProgress: {'identifier': 'ros_pkg', 'progress': 'build'}
+[4.204384] (ros_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg', '--', '-j8', '-l8'], 'cwd': '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'd-vinn'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d-vinn'), ('OLDPWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/ros_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(rospyvenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/d-vinn/ros2_study/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'd-vinn'), ('NAME', 'DESKTOP-DO0M5CF'), ('WSL_INTEROP', '/run/WSL/4143_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/opt/ros/humble/bin:/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/home/d-vinn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.14.0_x64__8wekyb3d8bbwe:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/302-09/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/302-09/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/302-09/AppData/Roaming/npm:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(rospyvenv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/my_first_package:/home/d-vinn/ros2_study/install/first_pkg_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:58882f73-14fe-490e-bfbf-ad31df727ead'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv'), ('PWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/d-vinn/ros2_study/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '6800'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/first_pkg_cpp:/home/d-vinn/ros2_study/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[4.209246] (-) TimerEvent: {}
+[4.239495] (ros_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtle_node.dir/src/turtle_control.cpp.o\x1b[0m\n'}
+[4.309361] (-) TimerEvent: {}
+[4.409654] (-) TimerEvent: {}
+[4.509964] (-) TimerEvent: {}
+[4.610322] (-) TimerEvent: {}
+[4.711041] (-) TimerEvent: {}
+[4.811575] (-) TimerEvent: {}
+[4.912189] (-) TimerEvent: {}
+[5.012586] (-) TimerEvent: {}
+[5.113006] (-) TimerEvent: {}
+[5.213660] (-) TimerEvent: {}
+[5.314092] (-) TimerEvent: {}
+[5.414551] (-) TimerEvent: {}
+[5.514935] (-) TimerEvent: {}
+[5.615226] (-) TimerEvent: {}
+[5.715514] (-) TimerEvent: {}
+[5.815788] (-) TimerEvent: {}
+[5.916120] (-) TimerEvent: {}
+[6.016347] (-) TimerEvent: {}
+[6.116632] (-) TimerEvent: {}
+[6.216910] (-) TimerEvent: {}
+[6.317235] (-) TimerEvent: {}
+[6.417519] (-) TimerEvent: {}
+[6.517829] (-) TimerEvent: {}
+[6.618109] (-) TimerEvent: {}
+[6.718373] (-) TimerEvent: {}
+[6.818645] (-) TimerEvent: {}
+[6.918945] (-) TimerEvent: {}
+[7.019170] (-) TimerEvent: {}
+[7.119507] (-) TimerEvent: {}
+[7.219742] (-) TimerEvent: {}
+[7.320059] (-) TimerEvent: {}
+[7.420404] (-) TimerEvent: {}
+[7.520637] (-) TimerEvent: {}
+[7.620873] (-) TimerEvent: {}
+[7.721205] (-) TimerEvent: {}
+[7.821440] (-) TimerEvent: {}
+[7.921717] (-) TimerEvent: {}
+[8.021989] (-) TimerEvent: {}
+[8.122271] (-) TimerEvent: {}
+[8.222526] (-) TimerEvent: {}
+[8.322813] (-) TimerEvent: {}
+[8.423096] (-) TimerEvent: {}
+[8.523342] (-) TimerEvent: {}
+[8.623579] (-) TimerEvent: {}
+[8.723858] (-) TimerEvent: {}
+[8.824107] (-) TimerEvent: {}
+[8.924412] (-) TimerEvent: {}
+[9.024806] (-) TimerEvent: {}
+[9.125177] (-) TimerEvent: {}
+[9.225610] (-) TimerEvent: {}
+[9.325924] (-) TimerEvent: {}
+[9.426241] (-) TimerEvent: {}
+[9.526572] (-) TimerEvent: {}
+[9.626833] (-) TimerEvent: {}
+[9.727061] (-) TimerEvent: {}
+[9.827284] (-) TimerEvent: {}
+[9.927578] (-) TimerEvent: {}
+[10.027798] (-) TimerEvent: {}
+[10.128073] (-) TimerEvent: {}
+[10.228299] (-) TimerEvent: {}
+[10.328549] (-) TimerEvent: {}
+[10.428807] (-) TimerEvent: {}
+[10.529073] (-) TimerEvent: {}
+[10.629356] (-) TimerEvent: {}
+[10.729638] (-) TimerEvent: {}
+[10.829856] (-) TimerEvent: {}
+[10.930115] (-) TimerEvent: {}
+[11.030364] (-) TimerEvent: {}
+[11.130624] (-) TimerEvent: {}
+[11.230885] (-) TimerEvent: {}
+[11.331152] (-) TimerEvent: {}
+[11.431424] (-) TimerEvent: {}
+[11.531685] (-) TimerEvent: {}
+[11.631946] (-) TimerEvent: {}
+[11.732211] (-) TimerEvent: {}
+[11.832473] (-) TimerEvent: {}
+[11.932732] (-) TimerEvent: {}
+[12.032991] (-) TimerEvent: {}
+[12.133397] (-) TimerEvent: {}
+[12.233682] (-) TimerEvent: {}
+[12.333959] (-) TimerEvent: {}
+[12.377291] (ros_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtle_node\x1b[0m\n'}
+[12.434039] (-) TimerEvent: {}
+[12.534442] (-) TimerEvent: {}
+[12.634672] (-) TimerEvent: {}
+[12.734898] (-) TimerEvent: {}
+[12.835130] (-) TimerEvent: {}
+[12.881136] (ros_pkg) StdoutLine: {'line': b'[100%] Built target turtle_node\n'}
+[12.890931] (ros_pkg) CommandEnded: {'returncode': 0}
+[12.891845] (ros_pkg) JobProgress: {'identifier': 'ros_pkg', 'progress': 'install'}
+[12.899283] (ros_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg'], 'cwd': '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'd-vinn'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/d-vinn'), ('OLDPWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/ros_pkg'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(rospyvenv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/d-vinn/ros2_study/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'd-vinn'), ('NAME', 'DESKTOP-DO0M5CF'), ('WSL_INTEROP', '/run/WSL/4143_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/opt/ros/humble/bin:/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv/bin:/home/d-vinn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.14.0_x64__8wekyb3d8bbwe:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python310/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/Scripts/:/mnt/c/Users/302-09/AppData/Local/Programs/Python/Python314/:/mnt/c/Users/302-09/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/302-09/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/302-09/AppData/Roaming/npm:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('VIRTUAL_ENV_PROMPT', '(rospyvenv)'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/my_first_package:/home/d-vinn/ros2_study/install/first_pkg_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:58882f73-14fe-490e-bfbf-ad31df727ead'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUAL_ENV', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/rospyvenv'), ('PWD', '/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/build/ros_pkg'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs/local/lib/python3.10/dist-packages:/home/d-vinn/ros2_study/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('VTE_VERSION', '6800'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/d-vinn/ros2_study/install/my_first_package_msgs:/home/d-vinn/ros2_study/install/first_pkg_cpp:/home/d-vinn/ros2_study/install/my_first_package:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[12.904263] (ros_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.904756] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/lib/ros_pkg/turtle_node\n'}
+[12.906722] (ros_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/lib/ros_pkg/turtle_node" to ""\n'}
+[12.907205] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/package_run_dependencies/ros_pkg\n'}
+[12.907449] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/parent_prefix_path/ros_pkg\n'}
+[12.907831] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/ament_prefix_path.sh\n'}
+[12.907997] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/ament_prefix_path.dsv\n'}
+[12.908211] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/path.sh\n'}
+[12.908315] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/environment/path.dsv\n'}
+[12.908541] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.bash\n'}
+[12.908617] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.sh\n'}
+[12.908751] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.zsh\n'}
+[12.909007] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/local_setup.dsv\n'}
+[12.909122] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/package.dsv\n'}
+[12.909272] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ament_index/resource_index/packages/ros_pkg\n'}
+[12.909491] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/cmake/ros_pkgConfig.cmake\n'}
+[12.909718] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/cmake/ros_pkgConfig-version.cmake\n'}
+[12.909792] (ros_pkg) StdoutLine: {'line': b'-- Installing: /home/d-vinn/ros2_study/src/ros-turtle-control/ros-turtle-control/install/ros_pkg/share/ros_pkg/package.xml\n'}
+[12.911891] (ros_pkg) CommandEnded: {'returncode': 0}
+[12.921867] (ros_pkg) JobEnded: {'identifier': 'ros_pkg', 'rc': 0}
+[12.922971] (-) EventReactorShutdown: {}
